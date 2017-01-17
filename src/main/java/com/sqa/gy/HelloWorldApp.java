@@ -40,13 +40,22 @@ public class HelloWorldApp {
 		String nameOfApp = "Hello World";
 		userName = greetUser(nameOfApp);
 		AppBasics.doSomething(nameOfApp, "greeting you.");
-		getUserAge();
+		int age = Integer.parseInt(AppBasics.getUserInfo("How old are you? "));
+		printUserAge(age);
+		String color = AppBasics.getUserInfo("What\'s your favorite color? ");
+		printUserColor(color);
 		farewellUser(userName, nameOfApp);
 	}
 
-	private static void getUserAge() {
-		int age = Integer.parseInt(AppBasics.getUserInfo("How old are you?"));
+	private static void printUserAge(int age) {
 		System.out.println("You are " + age + " years young!");
+	}
+
+	private static void printUserColor(String color) {
+		// TODO: make color capitalized since it's the first word in a sent in
+		// this print
+		System.out
+				.println(color.substring(0, 1).toUpperCase() + color.substring(1) + " is a very pretty color indeed!");
 	}
 
 }
