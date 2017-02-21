@@ -1,17 +1,7 @@
 /**
  *   File Name: AppBasics.java<br>
- *
  *   Yakovenko, Galina<br>
  *   Created: Jan 16, 2017
- *
- */
-
-/**
- * AppBasics
- *
- * @author      Yakovenko, Galina
- * @version     1.0.0
- * @since       1.0
  *
  */
 
